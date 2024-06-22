@@ -1,0 +1,26 @@
+Analisis Tabel:
+
+1. Tabel LevelKamar:
+   - id: Primary key.
+   - nama_level: Nama level kamar (misalnya VIP, Kelas 1).
+
+2. Tabel Kamar:
+   - id: Primary key.
+   - level_kamar_id: Foreign key, mengacu ke tabel LevelKamar.
+   - nomor_kamar: Nomor unik kamar.
+   - status: Status ketersediaan kamar (tersedia/tidak tersedia).
+
+3. Tabel Pasien:
+   - id: Primary key.
+   - nama: Nama pasien.
+   - nomor_identitas: Nomor identitas pasien (misalnya 123456789).
+
+4. Tabel ReservasiKamar:
+   - id: Primary key.
+   - kamar_id: Foreign key, mengacu ke tabel Kamar.
+   - pasien_id: Foreign key, mengacu ke tabel Pasien.
+   - tanggal_masuk: Tanggal masuk pasien.
+   - tanggal_keluar: Tanggal keluar pasien (nullable jika pasien belum keluar).
+
+Link Repository GitHub:
+https://github.com/Soniarmanda741/UAS_SoniArmandaS_PrakPemogramanIntergrative_TIA1_2109020041_2.git
